@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --ff-header: 'Mulish', sans-serif;
+    --c-h1: #02799D;
+    --c-body: hsla(240, 7%, 78%, 1);
+}
+
+ body {
+    display: grid;
+    justify-content: center;
+    
+
+
+    background-color: #1E1E1E;
+    font-family: var(--ff-header);
+    overflow-x: hidden;
+ }
+
+ body::before {
+    content: "";
+    background-image: url(https://nypost.com/wp-content/uploads/sites/2/2019/09/somethings-killing-galaxys2.jpg?quality=75&strip=all);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    
+    width: 100%;
+    height: 50%;
+    opacity: 0.1;
+    z-index: -1;
+
+    
+ }
+
+ header h1 {
+    color: var(--c-h1);
+    font-size: 5.8rem;
+    line-height: 7.2rem;
+    font-weight: 900;
+    margin:7.2rem auto 2rem;
+ }
+ 
+ header p {
+    font-size: 3.2rem;
+    color: var(--c-body);
+    font-weight: 600;
+    color: #E1E1E6;
+
+ }
+
+ main {
+   margin-top: 6.2rem;
+   margin-bottom: 5rem;
+
+   display: grid;
+   grid-template-columns: repeat(3, 370px);
+   
+   gap: 48px 60px;
+
+ }
+
+ .card {
+    background: #202024;
+    border: 2px solid #323238;
+    border-radius: 8px;
+    overflow: hidden;
+
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  
+
+ }
+
+ .card h2 {
+    color: hsla(240, 9%, 89%, 1);
+    font-size: 3.6rem;
+    font-weight: 900;
+
+    padding: 2.4rem 3.2rem 0rem;
+
+ }
+
+ .card p {
+    color: #C4C4CC;
+
+    padding: 2.4rem 3.2rem 3.2rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3.2rem;
+ }
